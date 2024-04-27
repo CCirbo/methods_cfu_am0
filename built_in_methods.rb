@@ -9,19 +9,31 @@
 "Hello World".downcase
 
 
-"Hello World".include?("Hello")
+ "Hello World".include?("Hello")
+# The .include method is called on a string object "Hello World" There is one argument or input to the method, in this case, the string 
+# in the parentheses ("Hello"). This method returns a boolean value of true if the given argument contains any characters
+# of the given string, in the order and capitalizaation they are present in the string, otherwise it will return false.
+
 
 
 "Hello World".end_with?("Hello")
+# The .end_with? is called on a string object "Hello World".  There is one argument or input, the string in the parentheses ("Hello").
+# This method returns the boolean value of true if the given argument contains either the end element in the given string.
 
 
 "Hello World".end_with?("rld")
+# Same thing here, this still returns true because "rld" is the last letters of the word in order from last to first. The .end_with? is called on a string object "Hello World".  There is one argument or input, the string in the parentheses ("Hello").
+# This method returns the boolean value of true if the given argument contains either the end element in the given string.
 
 
 12.even?
+# This is an integer function which returns a boolean value of true if an integer is even. If the integer is not even, the value returned is false.
 
 
 18.next
+# The next keyword is used within a loop to pass over certain elements and skip to the following iteration. 
+# It is useful for omitting elements that you do not wish to have iterated. next is followed by an if statement which defines which elements are to be skipped.
+# This explanation came from Codecademy.
 
 
 

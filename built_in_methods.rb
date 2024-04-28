@@ -53,11 +53,35 @@ puts first_name.start_with?("J")
 
 
 
+# The .length method is called on the name variable, which stores the string object "Tiger".
+# The .length method is used to find the character length of the given string.
+name = "Tiger"
+puts name.length
+
+# The .capitalize! method is called on the name1 variable, which stores the string "odin" and name2 variable that stores the string "Odell". The method returns 
+# the string either capitalizing the first letter of the string or if the first letter of the word is already capitalized, returns nothing.
+name1 = "odin"
+puts name1.capitalize!
+name2 = "Odell"
+puts name2.capitalize!
+
+
 # SECTION 3: Calling methods on variables assigned to integers.
 # Declare 2 variables assigned to integer objects.
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+num1 = 14
+num2 = 17
+
+puts num1.next
+# The .next method is called on the num1 variable, which stores the integer 14. The .next method, in this case, 
+# returns a value that is the next number in line, in this case a return integer of 15. 
+
+puts num2.integer?
+# The .integer? method is called on the num2 variable, which stores the integer 17. The .integer? method returns the value of true if the 
+# variable is an integer but brings a value of false if it is a float.
 
 
 
@@ -66,3 +90,14 @@ puts first_name.start_with?("J")
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+array1 = [1,2,3]
+print array1.shuffle
+# The .shuffle array method is called on the array1 with the elements of 1,2,3. 
+# The .shuffle returns the array with the elements of the array shuffled randomly and will continue to randomly shuffle the elements
+# each time the array1.shuffle is ran.
+
+array2 = [3,6,9]
+p array2.sum
+# The .sum method is called on the array2 with the elements of 3,6,9.
+# The .sum has a return value of all of the elements added together in the array.

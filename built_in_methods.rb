@@ -10,30 +10,34 @@
 
 
  "Hello World".include?("Hello")
-# The .include method is called on a string object "Hello World" There is one argument or input to the method, in this case, the string 
-# in the parentheses ("Hello"). This method returns a boolean value of true if the given argument contains any characters
-# of the given string, in the order and capitalizaation they are present in the string, otherwise it will return false.
+# The .include method is called on a string object "Hello World".  
+# There is one argument, the string ("Hello"). The job of include is to look for the argument in the string and verify it's presence.
+# This method returns true.
 
 
 
 "Hello World".end_with?("Hello")
-# The .end_with? is called on a string object "Hello World".  There is one argument or input, the string in the parentheses ("Hello").
-# This method returns the boolean value of true if the given argument contains either the end element in the given string.
-
+# The .end_with? method is called on a string object "Hello World".  
+# There is one argument, the string ("Hello").
+# In this case the job of .end_with? checks if Hello is the final element in the string. 
+# This method returns true.
 
 "Hello World".end_with?("rld")
-# Same thing here, this still returns true because "rld" is the last letters of the word in order from last to first. The .end_with? is called on a string object "Hello World".  There is one argument or input, the string in the parentheses ("Hello").
-# This method returns the boolean value of true if the given argument contains either the end element in the given string.
-
+# Same thing here, this still returns true because "rld" is the last letters of the word in order from last to first. 
+# The .end_with? method is called on a string object "Hello World".  
+# There is one argument, the string ("rld").
+# In this case the job of .end_with? checks if rld is the final content in the string. 
+# This method returns true.
 
 12.even?
-# This is an integer function which returns a boolean value of true if an integer is even. If the integer is not even, the value returned is false.
-
+# This .even method is called on the integer 12.
+# No arguments are passsed. The job of the .even method is to see if an intger is even.
+# This method returns true.
 
 18.next
-# The next keyword is used within a loop to pass over certain elements and skip to the following iteration. 
-# It is useful for omitting elements that you do not wish to have iterated. next is followed by an if statement which defines which elements are to be skipped.
-# This explanation came from Codecademy.
+# The .next method is called on the integer 18
+# No arguments are passed. The job of the .next method is to skip to the next number.
+# The return value is 19.
 
 
 

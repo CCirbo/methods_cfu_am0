@@ -15,12 +15,13 @@
 # This method returns true.
 
 
-
 "Hello World".end_with?("Hello")
 # The .end_with? method is called on a string object "Hello World".  
 # There is one argument, the string ("Hello").
 # In this case the job of .end_with? checks if Hello is the final element in the string. 
-# This method returns true.
+# This method returns false
+#Note: I have no defense of my other answer, the name literally says end with. I did run all of these when I did them
+# so I don't have any explanation except I need to slow down maybe.
 
 "Hello World".end_with?("rld")
 # Same thing here, this still returns true because "rld" is the last letters of the word in order from last to first. 
@@ -57,18 +58,27 @@ puts first_name.start_with?("J")
 
 
 
-# The .length method is called on the name variable, which stores the string object "Tiger".
-# The .length method is used to find the character length of the given string.
 name = "Tiger"
 puts name.length
+# The .length method is called on the name variable, which stores the string object "Tiger".
+# The .length method is used to find the character length of the given string.
+# The return value is 5
 
-# The .capitalize! method is called on the name1 variable, which stores the string "odin" and name2 variable that stores the string "Odell". The method returns 
-# the string either capitalizing the first letter of the string or if the first letter of the word is already capitalized, returns nothing.
+
 name1 = "odin"
 puts name1.capitalize!
 name2 = "Odell"
 puts name2.capitalize!
-
+# The .capitalize! method is called on the name1 variable, which stores the string "odin" 
+# and name2 variable that stores the string "Odell". 
+# The job of this method is to return the string either capitalizing the first letter of the string 
+# or if the first letter of the word is already capitalized, returns nothing. 
+# The return value of "odin" is "Odin".
+# The return value of "Odell" is blank.
+#Note: I could have used capitalize without the banger and the return value of "odin" would have been the same,
+# but the return value of Odell would have been Odell and not blank. I read that using a banger (at the end) might not be the best practice as the banger here
+# is actually modifying or altering the original string. I just wanted the effect for this question of the return value
+# coming back empty if the word was already capitalized. 
 
 # SECTION 3: Calling methods on variables assigned to integers.
 # Declare 2 variables assigned to integer objects.
@@ -80,12 +90,21 @@ num1 = 14
 num2 = 17
 
 puts num1.next
-# The .next method is called on the num1 variable, which stores the integer 14. The .next method, in this case, 
-# returns a value that is the next number in line, in this case a return integer of 15. 
+# The .next method is called on the num1 variable, which stores the integer 14.
+# The .next method is called on the num2 variable, which stores the integer 17.
+# The job of the .next method is to skip to the next number in line.
+# The return value of num1 is 15. 
+# The return value of num2 is 18.
 
+num1 = 14
+num2 = 17
 puts num2.integer?
-# The .integer? method is called on the num2 variable, which stores the integer 17. The .integer? method returns the value of true if the 
-# variable is an integer but brings a value of false if it is a float.
+# The .integer? method is called on the num1 variable, which stores the integer 14.
+# The .integer? method is called on the num2 variable, which stores the integer 17.
+# The job of the .integer? method is to tell you if the integer is an integer or not.
+# The return value is true for both num1 and num2.
+#Note:  I did not put this note in the first time however I did run a float in this method num1 = 14.5 
+# and num2 = 17.5 and both of these returned false.
 
 
 
@@ -100,8 +119,10 @@ print array1.shuffle
 # The .shuffle array method is called on the array1 with the elements of 1,2,3. 
 # The .shuffle returns the array with the elements of the array shuffled randomly and will continue to randomly shuffle the elements
 # each time the array1.shuffle is ran.
+# The return value was, [3,1,2] the first time then [2,1,3], then [1,3,2] 
 
 array2 = [3,6,9]
 p array2.sum
 # The .sum method is called on the array2 with the elements of 3,6,9.
-# The .sum has a return value of all of the elements added together in the array.
+# The .sum function is to add up all of the elements together in the array.
+# The return value is 18
